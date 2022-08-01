@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+		<meta charset="utf-8"/>
+        <meta name="VictorVogt" content="Portfolio de Victor Vogt"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="./hamburgers.css" rel="stylesheet">        
+        <link rel="stylesheet" type="text/css" href="./style-widescreen.css">
+        <link rel="stylesheet" type="text/css" href="./style-smallscreen.css">
+        <link rel="icon" type="image/ico" href="./logo.png" />
+		<title>Portfolio de Victor Vogt</title>
+	</head>
+	<body>
+		<div id="id_acceuil" class="acceuil">
+            <div class="titre">
+                <div class="presentation">
+                    <div class="presentation_main">VICTOR VOGT</div>
+                    <div class="presentation_second">Portfolio</div>
+                </div>
+                <div class="background"></div>
+            </div>
+        </div>
+        <div id="nav-icon" onclick="openmenu()">
+            <span id="nav-icon-sp1"></span>
+            <span id="nav-icon-sp2"></span>
+            <span id="nav-icon-sp3"></span>
+        </div>      
+        <!--<input onclick="openmenu()" class="menubtn-smart" type="button" value="X">-->
+        <div class="myBarmenu" id="myBarmenu">
+                <input onclick="scrolldown('id_acceuil')" class="menubtn" type="button" value="ACCUEIL">
+                <input onclick="scrolldown('id_apropos')" class="menubtn" type="button" value="A PROPOS">
+                <input onclick="scrolldown('id_competences')" class="menubtn" type="button" value="COMPETENCES">
+                <!--<input onclick="scrolldown('id_exppro')" class="menubtn" type="button" value="EXPERIENCE">-->
+                <input onclick="scrolldown('id_diplomes')" class="menubtn" type="button" value="DIPLOMES">
+                <input onclick="scrolldown('id_portfolio')" class="menubtn" type="button" value="PORTFOLIO">      
+            </div>
+        <div id="id_apropos" class="apropos">
+            <div class="apropos_title">A PROPOS</div>
+            <div class= "apropos_content">
+                <div class="diplomes_date_lay_smalls"><img src="./me.jpg" class="apropos_picture"></div>
+                <div class="apropos_text">
+                    <div class="apropos_name">Victor VOGT, 20ans</div>
+                    Je suis actuellement en 3ème année de licence informatique 
+                    à l'UFR Mathématiques et Informatqiue de Strasbourg. Je compte poursuivre mes études afin
+                    de faire un master dans la conception de logiciels. 
+                </br></br>
+                    Ce portfolio a pour
+                    but de vous présenter les différents projets sur lesquelles j'ai pu travailler ainsi que
+                    mes compétences aussi bien techniques que professionnelles.
+                </br></br>
+                    <a id="dwlink" href="./CV.pdf" download="VictorVOGT-CV.pdf">Télécharger mon CV</a>
+                </div>
+                <div class="diplomes_date_lay_wides"><img src="./me.jpg" class="apropos_picture"></div>
+            </div>
+        </div>
+        <div id="id_competences" class="competences">
+            <div class="comp_title">COMPETENCES</div>
+            <div class= "comp_content"> 
+                <div class="comp_content_initule"> Langages & Technologies </div>
+                    <div class="comp_layout">
+                        <div class="comp_solo">C/C++
+                            <div id="myProgress">
+                                <div id="myBar1"><div id="percent">90%</div></div>
+                            </div>
+                        </div>
+                        <div class="comp_solo">HTML 5/CSS
+                            <div id="myProgress">
+                                <div id="myBar2"><div id="percent">70%</div></div>
+                            </div>
+                        </div>
+                        <div class="comp_solo">JAVA
+                            <div id="myProgress">
+                                <div id="myBar3"><div id="percent">70%</div></div>
+                            </div>
+                        </div>
+                        <div class="comp_solo">PL/SQL
+                            <div id="myProgress">
+                                <div id="myBar4"><div id="percent">60%</div></div>
+                            </div>
+                        </div>
+                        <div class="comp_solo">PHP 7
+                            <div id="myProgress">
+                                <div id="myBar5"><div id="percent">60%</div></div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="comp_content_initule"> Logiciels </div>
+                    <div class="comp_layout">
+                        <div class="comp_solo">Qt Creator
+                            <div id="myProgress">
+                                <div id="myBar6"><div id="percent">80%</div></div>
+                            </div>
+                        </div>
+                        <div class="comp_solo">Git
+                            <div id="myProgress">
+                                <div id="myBar7"><div id="percent">70%</div></div>
+                            </div>
+                        </div>
+                        <div class="comp_solo">SQLdeveloper
+                            <div id="myProgress">
+                                <div id="myBar8"><div id="percent">60%</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- <div id="id_exppro" class="exppro">
+            <div class="exppro_title">EXPERIENCE</div>
+        </div>-->
+        <div id="id_diplomes" class="diplomes">
+            <div id="diplomes_bgcolor"></div>
+            <div id="diplomes_bgblack"></div>
+            <div class="diplomes_title">DIPLOMES</div>
+            <div class="diplomes_content">
+                <div class="diplomes_date_lay"><div class="diplomes_date"></br></br>2020</div></div>
+                <div class="diplomes_textblock">
+                    <div class="diplomes_content_title">3ème année de licence Informatique</div></br>
+                    à l'UFR Mathématiques et Informatique de Strasbourg
+                </div>
+            </div>
+            <div class="diplomes_content">
+                <div class="diplomes_date_lay"><div class="diplomes_date"></br></br>2017</div></div>
+                <div class="diplomes_textblock">
+                    <div class="diplomes_content_title">Baccalauréat Scientifique Mention Bien option SVT</div></br>
+                    Obtenu au lycée Ribeaupierre à Ribeauvillé en 2017
+                </div>
+            </div>
+        </div>
+        <div id="id_portfolio" class="portfolio">
+            <div class="portfolio_title">PORTFOLIO</div>
+            <div class="portfolio_content">
+                <div class="portfolio_project">
+                    <img src="./projects/BlaBla/BlaBla.png" class="portfolio_project_img">
+                    <div class="portfolio_hidden" id="portfolio_hidden_timebomb">
+                        <input class="projectbtn" type="button" value="X">
+                        <div class="portfolio_intitule_title">BlaBla.fr</div>
+                        
+                        <div class="portfolio_intitule">Descriptif:</div>
+                        <div class="portfolio_project_data">
+                        Implémentation d'un forum en ligne. Mise en place de droits spécifiques,
+                        de comptes, de commentaires, de notes, de topics, de catégories. Possibilité de gérer son profil, l'administrateur peut
+                        supprimmer des comptes déja crées.</div></br></br>
+                        <div class="portfolio_verticalay">
+                            <div class="portfolio_intitule">Language(s):<div class="portfolio_project_data">HTML5 / CSS3 / PHP7</div></div>
+                            
+                            <div class="portfolio_intitule">Logiciel(s):<div class="portfolio_project_data">PhpMyAdmin</div></div>
+                            
+                            <div class="portfolio_intitule">Modalités:<div class="portfolio_project_data">Projet solo / Cadre universitaire</div></div>
+                            
+                        </div>
+                        <div class="portfolio_project_pics">
+                            <img src="./projects/BlaBla/1.png" class="portfolio_project_show">
+                            <img src="./projects/BlaBla/2.png" class="portfolio_project_show">
+                            <img src="./projects/BlaBla/3.png" class="portfolio_project_show">
+                            <img src="./projects/BlaBla/4.png" class="portfolio_project_show">
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_project">
+                    <img src="./projects/BDD/bdd.png" class="portfolio_project_img">
+                    <div class="portfolio_hidden" id="portfolio_hidden_timebomb">
+                        <input class="projectbtn" type="button" value="X">
+                        <div class="portfolio_intitule_title">Banque de données</div>
+                        
+                        <div class="portfolio_intitule">Descriptif:</div>
+                        <div class="portfolio_project_data">
+                        Implémentation d'une banque de données avec les sockets Unix. J'utilise le protocol UDP. Elle est composée d'un 
+                        serveur d'accès unique qui identifie l'utilisateur et vérifie ses droits de consultation 
+                        des données stockées dans les différents noeuds de stockage. Elle est composée des serveurs
+                        de stockage qui possèdent les données stockées et peuvent les envoyer au serveur d'accès.
+                        Elle est aussi composée d'un programme client qui permet à un utilisateur quelconque de s'identifier,
+                        de consulter des données selon ses droits et de modifier ses propres données. Les serveurs de stockage
+                        peuvent être dupliqués afin d'éviter les pannes.
+                        </div></br></br>
+                        <div class="portfolio_verticalay">
+                            <div class="portfolio_intitule">Language(s):<div class="portfolio_project_data">C</div></div>
+                            
+                            <div class="portfolio_intitule">Logiciel(s):<div class="portfolio_project_data">-</div></div>
+                            
+                            <div class="portfolio_intitule">Modalités:<div class="portfolio_project_data">Projet solo / Cadre universitaire</div></div>
+                            
+                        </div>
+                        <!--<div class="portfolio_project_pics">
+                            <img src="./projects/BlaBla/1.png" class="portfolio_project_show">
+                            <img src="./projects/BlaBla/2.png" class="portfolio_project_show">
+                            <img src="./projects/BlaBla/3.png" class="portfolio_project_show">
+                            <img src="./projects/BlaBla/4.png" class="portfolio_project_show">
+                        </div>-->
+                    </div>
+                </div>
+                <div class="portfolio_project">
+                    <img src="./projects/TimeBomb/Timebomb.jpg" class="portfolio_project_img">
+                    <div class="portfolio_hidden" id="portfolio_hidden_timebomb">
+                        <input class="projectbtn" type="button" value="X">
+                        <div class="portfolio_intitule_title">TimeBomb</div>
+                        
+                        <div class="portfolio_intitule">Descriptif:</div>
+                        <div class="portfolio_project_data">
+                        Implémentation du jeu de cartes sur table TimeBomb en jeu vidéo, comprenant un mode de jeu
+                        en local de 4-8 joueurs sur une machine ainsi que la possibilité d'ajouter des bots, nous avons
+                        aussi implémenté un mode en réseau multijoueur.</div></br></br>
+                        <div class="portfolio_verticalay">
+                            <div class="portfolio_intitule">Language(s):<div class="portfolio_project_data">C++</div></div>
+                            
+                            <div class="portfolio_intitule">Logiciel(s):<div class="portfolio_project_data">Qt Creator</div></div>
+                            
+                            <div class="portfolio_intitule">Modalités:<div class="portfolio_project_data">Groupe de 6 personnes / Cadre universitaire</div></div>
+                            
+                        </div>
+                        <div class="portfolio_project_pics">
+                            <img src="./projects/TimeBomb/1.png" class="portfolio_project_show">
+                            <img src="./projects/TimeBomb/2.png" class="portfolio_project_show">
+                            <img src="./projects/TimeBomb/3.png" class="portfolio_project_show">
+                            <img src="./projects/TimeBomb/4.png" class="portfolio_project_show">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <a href="https://twitter.com/VogtVictor1" id="iconend" class="fa fa-twitter"></a>
+        </div>
+
+        <!-- Load js when all document is loaded -->
+        <script type ="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type ="text/javascript" src="https://raw.githubusercontent.com/wilq32/jqueryrotate/master/jQueryRotate.js"></script>
+        <script type ="text/javascript" src="./myscript.js"></script>         
+        <script type ="text/javascript" src="./hamburgers.js"></script>           
+        <script type ="text/javascript" src="jquery.easing.1.3.js"></script>
+    </body>
+    </html>
