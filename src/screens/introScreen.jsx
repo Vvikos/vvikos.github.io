@@ -12,11 +12,11 @@ export default function IntroScreen({mainRef}) {
 		e.target.classList.add('animate');
 		setTimeout(function(){
 		  e.target.classList.remove('animate');
-		},700);
+		}, 700);
 	};
 
 	return (
-		<div ref={mainRef} style={{ display: 'flex', flexDirection: 'row', height: '100vh', width: '100vw', justifyContent: 'center', alignItems: 'center', marginBottom: '20vh'}}>
+		<div ref={mainRef} style={{ display: 'flex', flexDirection: 'row', height: '100vh', width: '100vw', justifyContent: 'center', alignItems: 'center', marginBottom: '40vh'}}>
 			<Parallax translateY={[-10, 20]} style={{height: '100%', width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}} >
 			<div className="about">
 				<Bounce left>

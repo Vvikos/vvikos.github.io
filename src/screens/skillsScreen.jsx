@@ -5,7 +5,7 @@ import { Parallax } from "react-scroll-parallax";
 export default function SkillsScreen({mainRef}) {
   
 	return (
-		<div ref={mainRef}>
+		<div ref={mainRef} style={{marginBottom: '40vh'}}>
 		<Parallax translateY={[-10, 10]} style={{height: 'auto', width: '100%'}} ><Bounce bottom cascade>
 		<div style={{ display: 'flex', flexDirection: 'row', height: '100vh', width: '100vw', justifyContent: 'space-around', alignItems: 'center', flexWrap: 'wrap'}}>
 				<div className="wrapper-card wrapper-card-down">

@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useCallback, useRef } from "react";
 
-export default function Navbar({homeRef, aboutRef, skillRef, workRef, contactRef}) {
+export default function Navbar({homeRef, aboutRef, skillRef, workRef}) {
     const homeRefBtn = useRef(null);
     const aboutRefBtn = useRef(null);
     const skillRefBtn = useRef(null); 
@@ -18,7 +18,34 @@ export default function Navbar({homeRef, aboutRef, skillRef, workRef, contactRef
         return () => window.removeEventListener('scroll', onScroll);
     }, []);
 
+    const handleAnimation = useCallback((ref) => {
+        const toRemoveRefs = [homeRefBtn?.current, aboutRefBtn?.current, skillRefBtn?.current, workRefBtn?.current];
+        if (ref){
+            ref.className = "underline";
+            toRemoveRefs.forEach(element => {
+                if(element && element !== ref)
+                    element.className = "";
+            });
+        }
+    }, [homeRefBtn, aboutRefBtn, skillRefBtn, workRefBtn]);
+
     useEffect(() => {
+        const showBackground = () => {
+            const ref = backgroundRef?.current;
+            if (ref){
+                ref.setAttribute('class', 'appearance');
+                logoRef.current.className = 'navbarTitle appearance';
+            }
+        };
+    
+        const hideBackground = () => {
+            const ref = backgroundRef?.current;
+            if (ref){
+                ref.setAttribute('class', '');
+                logoRef.current.className = 'navbarTitle';
+            }
+        };
+
         const offetLimit = 50;
 
         if(offset*2+offetLimit>=aboutRef.current.offsetTop)
@@ -36,7 +63,7 @@ export default function Navbar({homeRef, aboutRef, skillRef, workRef, contactRef
             handleAnimation(homeRefBtn.current);
         else 
             handleAnimation("none");
-    }, [offset]);
+    }, [offset, homeRef, aboutRef, skillRef, workRef, handleAnimation]);
 
     const handleScroll = (ref) => {
         window.scrollTo({
@@ -44,33 +71,6 @@ export default function Navbar({homeRef, aboutRef, skillRef, workRef, contactRef
           left: 0,
           behavior: "smooth"
         });
-    };
-
-    const handleAnimation = (ref) => {
-        const toRemoveRefs = [homeRefBtn.current, aboutRefBtn.current, skillRefBtn.current, workRefBtn.current]
-        if (ref){
-            ref.className = "underline";
-            toRemoveRefs.forEach(element => {
-                if(element && element != ref)
-                    element.className = "";
-            });
-        }
-    };
-
-    const showBackground = () => {
-        const ref = backgroundRef.current;
-        if (ref){
-            ref.setAttribute('class', 'appearance');
-            logoRef.current.className = 'navbarTitle appearance';
-        }
-    };
-
-    const hideBackground = () => {
-        const ref = backgroundRef.current;
-        if (ref){
-            ref.setAttribute('class', '');
-            logoRef.current.className = 'navbarTitle';
-        }
     };
     
     return (
@@ -93,10 +93,10 @@ export default function Navbar({homeRef, aboutRef, skillRef, workRef, contactRef
                 <div ref={logoRef} className="navbarTitle">VICTOR VOGT</div>
             </div>
             <div style={{width: '30%', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
-                <a ref={homeRefBtn} onClick={() => {handleScroll(homeRef.current); handleAnimation(homeRefBtn.current)}}>Home</a>
-                <a ref={aboutRefBtn} onClick={() => {handleScroll(aboutRef.current); handleAnimation(aboutRefBtn.current)}}>About Me</a>
-                <a ref={skillRefBtn} onClick={() => {handleScroll(skillRef.current); handleAnimation(skillRefBtn.current)}}>Services</a>
-                <a ref={workRefBtn} onClick={() => {handleScroll(workRef.current); handleAnimation(workRefBtn.current)}}>Work</a>
+                <button ref={homeRefBtn} onClick={() => {handleScroll(homeRef.current); handleAnimation(homeRefBtn.current)}}>Home</button>
+                <button ref={aboutRefBtn} onClick={() => {handleScroll(aboutRef.current); handleAnimation(aboutRefBtn.current)}}>About Me</button>
+                <button ref={skillRefBtn} onClick={() => {handleScroll(skillRef.current); handleAnimation(skillRefBtn.current)}}>Services</button>
+                <button ref={workRefBtn} onClick={() => {handleScroll(workRef.current); handleAnimation(workRefBtn.current)}}>Work</button>
             </div>
         </div>
           

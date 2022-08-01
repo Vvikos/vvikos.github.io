@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useRef } from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
 
 import MainScreen from "./screens/mainScreen";

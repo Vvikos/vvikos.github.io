@@ -29,7 +29,7 @@ export default function MainScreen({mainRef}) {
 				</a>
 				</div>
 			</div>
-			<img className="homePic" src={me}></img>
+			<img alt='' className="homePic" src={me}></img>
 		</div>
 	);
 }
