@@ -20,7 +20,7 @@ export default function IntroScreen({mainRef}) {
 			<Parallax translateY={[-10, 20]} style={{height: '100%', width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}} >
 			<div className="about">
 				<Bounce left>
-					<img src={me}></img>
+					<img alt=' ' src={me}></img>
 				</Bounce>
 				<Bounce right>
 					<div style={{width: '40%', marginLeft: "20px"}}>
