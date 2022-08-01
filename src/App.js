@@ -8,8 +8,6 @@ import WorkScreen from "./screens/workScreen";
 
 import Navbar from "./components/navbar";
 
-import "./index.css";
-
 export default function App() {
 	const homeRef = useRef(null);
 	const aboutRef = useRef(null);
