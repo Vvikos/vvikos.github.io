@@ -5,7 +5,7 @@
          url('./assets/fonts/Thunder-BlackHC.woff') format('woff'), /* Modern Browsers */
          url('./assets/fonts/Thunder-BlackHC.woff2') format('woff2'), /* Modern Browsers */
          url('./assets/fonts/Thunder-BlackHC.ttf') format('truetype'); /* Safari, Android, iOS */
-             font-style: normal;
+    font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
