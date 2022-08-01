@@ -6,13 +6,11 @@ pages:
     paths:
       - node_modules/
   script:
-    - npm install
-    - npm run build
-    - rm -rf public
-    - cp build/index.html build/404.html
-    - mv build public
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
   artifacts:
     paths:
       - public
   only:
-    - develop
+    - gh-pages
