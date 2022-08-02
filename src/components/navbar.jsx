@@ -90,7 +90,7 @@ export default function Navbar({homeRef, aboutRef, skillRef, workRef}) {
                 </g>
             </svg>
             <div style={{width: '25%'}}>
-                <div ref={logoRef} className="navbarTitle">VICTOR VOGT</div>
+                <div ref={logoRef} className="navbarTitle"><span className="firstLetter">V</span><span className="displayAfter">ICTOR</span> <span className="lastLetter">V</span><span className="displayAfter">OGT</span></div>
             </div>
             <div style={{width: '30%', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
                 <button ref={homeRefBtn} onClick={() => {handleScroll(homeRef.current); handleAnimation(homeRefBtn.current)}}>Home</button>

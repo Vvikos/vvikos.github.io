@@ -20,24 +20,24 @@ export default function WorkScreen({mainRef}) {
 			</Fade>
 			<Fade bottom>
 				<div className='project' style={{height: '30vh', backgroundColor: '#F6AE99'}}>
-					PROJECT
+					ApolloOptionsPicker
 				</div>
 			</Fade>
 		</div>
 		<div className='column'>
 			<Fade bottom>
 				<div className='project' style={{height: '60vh', backgroundColor: '#ff5e62'}}>
-					MediaHub
+					TimeBomb
 				</div>
 			</Fade>
 			<Fade bottom>
 				<div className='project' style={{height: '30vh', backgroundColor: '#F6AE99'}}>
-					PROJECT
+					Exploding Kittens
 				</div>
 			</Fade>
 			<Fade bottom>
 				<div className='project' style={{height: '40vh', backgroundColor: '#ff9966'}}>
-					PROJECT
+					Test Automation
 				</div>
 			</Fade>
 		</div>

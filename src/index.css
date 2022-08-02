@@ -201,8 +201,56 @@ a {
 	font-family: 'ThunderBlack', Arial, sans-serif;
 	margin-top: 2.5%;
 	opacity: 0;
-	transition: .4s;
 }
+
+.navbarTitle span {
+	font-family: 'ThunderBlack', Arial, sans-serif;
+}
+
+.navbarTitle .displayAfter {
+	display: inline-block;
+	opacity: 0;
+	font-size: 0em;
+}
+
+.navbarTitle .firstLetter, .navbarTitle .lastLetter {
+	display: inline-block;
+	transition: transform .5s ease-in-out;
+}
+
+.navbarTitle .firstLetter {
+	transform: translateX(100%);
+}
+
+.navbarTitle .lastLetter {
+	transform: translateX(-100%);
+}
+
+.navbarTitle.appearance .displayAfter {
+	animation: navbarTitleAnim 0.4s ease-in-out 0.2s alternate forwards;
+}
+
+.navbarTitle.appearance .firstLetter, .navbarTitle.appearance .lastLetter {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+@keyframes navbarTitleAnim {
+	0% {
+		opacity: 0;
+		font-size: 0;
+	}
+	33% {
+		opacity: 0;
+		font-size: 0.9em;
+	}
+	100% {
+		opacity: 1;
+		font-size: 0.9em;
+	}
+  }
+
+
 
 /* The navigation bar */
 .navbar {

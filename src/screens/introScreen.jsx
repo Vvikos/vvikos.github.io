@@ -44,8 +44,8 @@ export default function IntroScreen({mainRef}) {
 							Furthermore, I have concrete passion for skateboarding, hiking, music, travelling and clothes.		
 						</div>
 						<div style={{ height: 'auto', display: 'flex', flexDirection: 'row', width: "80%", justifyContent: 'flex-start', alignItems: 'center'}}>
-							<a onClick={animateButton} className="bubbly-button" href="/cv.pdf" download="CV"><i class="fa-solid fa-download"></i>Download CV</a>
-							<a onClick={animateButton} className="bubbly-button" href="https://www.linkedin.com/in/victor-vogt-80b766209">Hire Me</a>
+							<a onMouseDown={animateButton} className="bubbly-button" href="/cv.pdf" download="CV"><i class="fa-solid fa-download"></i>Download CV</a>
+							<a onMouseDown={animateButton} className="bubbly-button" href="https://www.linkedin.com/in/victor-vogt-80b766209">Hire Me</a>
 						</div>
 					</div>
 				</Bounce>
