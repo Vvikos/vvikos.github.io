@@ -646,13 +646,123 @@ a {
 	align-items: center;
 	margin-bottom: 15px;
 	font-weight: 600;
-	font-size: 4em;
+	font-size: 2em;
 	transition: .5s;
+	overflow: hidden;
 }
 
 .project:hover {
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	transform: scaleX(1.01) scaleY(1.01);
+	opacity: 0;
+	width: 99%;
+}
+
+.project .content {
+	font-size: 0.5em;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.16);
+	width: 100%;
+	bottom: -100%;
+	transition: .5s ease-in-out;
+	text-align: left;
+	padding-left: 1em;
+	padding-bottom: 10%;
+}
+
+.project:hover .content {
+	bottom: 0%;
+}
+
+.project .role {
+	font-size: 0.5em;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.16);
+	width: 30%;
+	top: -30%;
+	left: 0;
+	transition: .5s ease-in-out;
+}
+
+.project:hover .role {
+	top: 0%;
+}
+
+.project .intitule {
+	position: absolute;
+	width: 100%;
+	opacity: 1;
+	transition: 0.2s ease-in-out;
+}
+
+.project:hover .intitule {
+	opacity: 0;
+}
+
+.project img {
+	width: 100%;
+	opacity: 0;
+	filter: blur(2px) grayscale(40%);
+	transition: 0.2s ease-in-out;
+}
+
+.project:hover img {
+	opacity: 1;
+}
+
+.project .tags {
+	position: absolute;
+	top: -30%;
+	right: 0;
+	transition: .5s ease-in-out;
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.project:hover .tags {
+	top: 0%;
+}
+
+.project .tag {
+	font-size: 0.4em;
+	padding: 4px;
+	border: 1px solid white;
+	margin-right: 3px;
+	transition: .5s
+}
+
+.project .tag:hover {
+	background-color: white;
+	color:rgba(0, 0, 0, 0.7);
+}
+
+.project .technos {
+	height: 10%;
+	transition: .5s ease-in-out;
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.project:hover .technos {
+	top: 0%;
+}
+
+.project .techno {
+	font-size: 0.8em;
+	padding: 4px;
+	border: 1px solid white;
+	margin-right: 3px;
+	transition: .5s
+}
+
+.project .techno:hover {
+	background-color: white;
+	color:rgba(0, 0, 0, 0.7);
 }
 
 /* SIGNATURE */
