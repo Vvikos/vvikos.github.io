@@ -35,6 +35,9 @@ export default function IntroScreen({mainRef}) {
 							<div className='info'>
 								<i className="fa-solid fa-graduation-cap fa-xl" style={{color: '#EA4335'}}></i>Computer Science PhD, University of Strasbourg
 							</div>
+							<div className='info'>
+								<a href='https://github.com/Vvikos' target='_blank'  rel="noreferrer"><i className="fa-brands fa-github fa-xl" style={{color: '#EA4335'}}></i></a>Vvikos
+							</div>
 						</div>
 						<div className="bubble" >
 							Since I was a kid, I always spent time on my computer making animations and designing short 2D animations. All this time I spent made me discover my passions for designing and animating digital content.
