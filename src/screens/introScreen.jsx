@@ -16,7 +16,7 @@ export default function IntroScreen({mainRef}) {
 	};
 
 	return (
-		<div ref={mainRef} style={{ display: 'flex', flexDirection: 'row', height: '100vh', width: '100vw', justifyContent: 'center', alignItems: 'center', marginBottom: '40vh'}}>
+		<div ref={mainRef} style={{ display: 'flex', flexDirection: 'row', height: '100vh', width: '100vw', justifyContent: 'center', alignItems: 'center', marginBottom: '20vh'}}>
 			<Parallax translateY={[-10, 20]} style={{height: '100%', width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}} >
 			<div className="about">
 				<Bounce left>
@@ -30,10 +30,10 @@ export default function IntroScreen({mainRef}) {
 						<br />
 						<div style={{height: '10%',width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', flexWrap: 'wrap'}}>
 							<div className='info'>
-								<i class="fa-solid fa-location-dot fa-xl" style={{color: '#EA4335'}}></i>Strasbourg, France
+								<i className="fa-solid fa-location-dot fa-xl" style={{color: '#EA4335'}}></i>Strasbourg, France
 							</div>
 							<div className='info'>
-								<i class="fa-solid fa-graduation-cap fa-xl" style={{color: '#EA4335'}}></i>Computer Science PhD, University of Strasbourg
+								<i className="fa-solid fa-graduation-cap fa-xl" style={{color: '#EA4335'}}></i>Computer Science PhD, University of Strasbourg
 							</div>
 						</div>
 						<div className="bubble" >
@@ -43,9 +43,9 @@ export default function IntroScreen({mainRef}) {
 							As of today, I’m 22 and I come from France. My studies confirmed my passions for automation and fullstack projects.
 							Furthermore, I have concrete passion for skateboarding, hiking, music, travelling and clothes.		
 						</div>
-						<div style={{ height: 'auto', display: 'flex', flexDirection: 'row', width: "80%", justifyContent: 'flex-start', alignItems: 'center'}}>
-							<a onMouseDown={animateButton} className="bubbly-button" href="/cv.pdf" download="CV"><i class="fa-solid fa-download"></i>Download CV</a>
-							<a onMouseDown={animateButton} className="bubbly-button" href="https://www.linkedin.com/in/victor-vogt-80b766209">Hire Me</a>
+						<div style={{ height: 'auto', display: 'flex', flexDirection: 'row', width: "100%", justifyContent: 'flex-start', alignItems: 'center'}}>
+							<a onMouseDown={animateButton} className="bubbly-button" href="/cv.pdf" download="CV"><i className="fa-solid fa-download"></i>Download CV</a>
+							<a onMouseDown={animateButton} className="bubbly-button" href="https://www.linkedin.com/in/victor-vogt-80b766209" target='_blank'  rel="noreferrer">Hire Me</a>
 						</div>
 					</div>
 				</Bounce>

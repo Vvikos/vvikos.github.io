@@ -20,7 +20,7 @@ export default function MainScreen({mainRef}) {
 				<div className="title">VICTOR VOGT</div>
 				<div className="titleAlt" >Fullstack & Automation Web Engineer</div>
 				<div style={{padding: '50px'}}>
-				<a onClick={animateButton} href="mailto:v.vogt991@gmail.com" class="cta">
+				<a onClick={animateButton} href="mailto:v.vogt991@gmail.com" className="cta">
 					<span>Contact Me</span>
 					<svg viewBox="0 0 13 10">
 						<path d="M1,5 L11,5"></path>

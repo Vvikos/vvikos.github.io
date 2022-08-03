@@ -89,7 +89,7 @@ export default function Navbar({homeRef, aboutRef, skillRef, workRef}) {
                     </g>
                 </g>
             </svg>
-            <div style={{width: '25%'}}>
+            <div style={{width: '25%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <div ref={logoRef} className="navbarTitle"><span className="firstLetter">V</span><span className="displayAfter">ICTOR</span> <span className="lastLetter">V</span><span className="displayAfter">OGT</span></div>
             </div>
             <div style={{width: '30%', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>

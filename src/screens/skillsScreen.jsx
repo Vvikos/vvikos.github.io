@@ -5,12 +5,12 @@ import { Parallax } from "react-scroll-parallax";
 export default function SkillsScreen({mainRef}) {
   
 	return (
-		<div ref={mainRef} style={{marginBottom: '40vh'}}>
+		<div ref={mainRef} style={{marginBottom: '20vh'}}>
 		<Parallax translateY={[-10, 10]} style={{height: 'auto', width: '100%'}} ><Bounce bottom cascade>
 		<div style={{ display: 'flex', flexDirection: 'row', height: '100vh', width: '100vw', justifyContent: 'space-around', alignItems: 'center', flexWrap: 'wrap'}}>
 				<div className="wrapper-card wrapper-card-down">
 					<div className="card">
-						<div><i class="fa-solid fa-display fa-3x" style={{color: '#00FFB8'}} ></i></div>
+						<div><i className="fa-solid fa-display fa-3x" style={{color: '#00FFB8'}} ></i></div>
 						<h2>Front End</h2>
 						<div className="description">User friendly web interfaces developpement.</div>
 						<div className="languages">
@@ -23,6 +23,7 @@ export default function SkillsScreen({mainRef}) {
 							<div className="language">SCSS</div>
 							<div className="language">NPM</div>
 							<div className="language">Javascript</div>
+							<div className="language">Expo</div>
 						</div>
 					</div>
 				</div>
