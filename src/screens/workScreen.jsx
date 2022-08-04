@@ -69,8 +69,8 @@ export default function WorkScreen({mainRef}) {
 	}
 
 	return (
-		<div ref={mainRef} style={{ backgroundColor:'white', display: 'flex', flexDirection: 'row', minHeight: '100vh', width: '100vw', justifyContent: 'center', alignItems: 'flex-start', marginBottom: '5vh'}}>
-			<Parallax translateY={[-1, 20]} style={{height: 'auto', width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'flex-start'}} >
+		<div ref={mainRef} style={{ backgroundColor:'white', display: 'flex', flexDirection: 'row', minHeight: '120vh', width: '100vw', justifyContent: 'center', alignItems: 'flex-start'}}>
+			<Parallax translateY={[-1, 20]} className='workSection' >
 			<div className='column'>
 				{generateColumn(0)}
 			</div>

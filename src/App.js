@@ -13,14 +13,12 @@ export default function App() {
 	const aboutRef = useRef(null);
 	const skillsRef = useRef(null);  
 	const workRef = useRef(null);
-	const contactRef = useRef(null); 
 
 	return (
 		<main>
 			<Navbar homeRef={homeRef} aboutRef={aboutRef} skillRef={skillsRef} workRef={workRef} />
 			<ParallaxProvider>	
-				<div className="background-new">
-
+				<div className="background">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.16367005621592057 -1.3584306347995945 1920.1007080078125 957.9055786132812" preserveAspectRatio="none">
 						<g>
 							<defs>
@@ -63,9 +61,6 @@ export default function App() {
 					<IntroScreen mainRef={aboutRef} />
 					<SkillsScreen mainRef={skillsRef}/>
 					<WorkScreen mainRef={workRef}/>
-					<div className='signature' ref={contactRef} style={{textAlign:'right', backgroundColor: 'white', color: '#FF5E62'}}>
-						Designed By Victor Vogt	
-					</div>
 				</div>
 			</ParallaxProvider>
 		</main>

@@ -6,8 +6,8 @@ export default function SkillsScreen({mainRef}) {
   
 	return (
 		<div ref={mainRef} style={{marginBottom: '20vh'}}>
-		<Parallax translateY={[-10, 10]} style={{height: 'auto', width: '100%'}} ><Bounce bottom cascade>
-		<div style={{ display: 'flex', flexDirection: 'row', height: '100vh', width: '100vw', justifyContent: 'space-around', alignItems: 'center', flexWrap: 'wrap'}}>
+		<Parallax translateY={[-10, 10]} style={{width: '100%'}} ><Bounce bottom cascade>
+			<div className='skillsSection'>
 				<div className="wrapper-card wrapper-card-down">
 					<div className="card">
 						<div><i className="fa-solid fa-display fa-3x" style={{color: '#00FFB8'}} ></i></div>
@@ -72,7 +72,7 @@ export default function SkillsScreen({mainRef}) {
 						</div>
 					</div>
 				</div>
-		</div>
+			</div>
 		</Bounce></Parallax>
 		</div>
 	);
