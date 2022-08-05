@@ -6,7 +6,7 @@ export default function SkillsScreen({mainRef}) {
   
 	return (
 		<div ref={mainRef} style={{marginBottom: '20vh'}}>
-		<Parallax translateY={[-10, 10]} style={{width: '100%'}} ><Bounce bottom cascade>
+		<Parallax translateY={[-10, 10]} style={{width: '100%', display: 'flex', flexDirection:'row', justifyContent: 'center', alignItems: 'center'}} ><Bounce bottom cascade>
 			<div className='skillsSection'>
 				<div className="wrapper-card wrapper-card-down">
 					<div className="card">

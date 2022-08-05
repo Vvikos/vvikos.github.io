@@ -512,14 +512,14 @@ a {
 	display: flex;
 	flex-direction: row;
 	height: 100vh;
-	width: 100vw;
+	width: 95vw;
 	justify-content: space-around;
 	align-items: center;
 }
 
 .wrapper-card, .wrapper-card-reversed {
 	position: relative;
-	height: 80%;
+	height: 70%;
 	width: 23%;
 	z-index: 10;
 }
@@ -654,7 +654,7 @@ a {
 
 /* PROJECTS */
 .workSection {
-	width: 100%;
+	width: 95%;
 	height: auto;
 	display: flex;
 	flex-direction: row;
@@ -675,6 +675,7 @@ a {
 
 .project {
 	width: 98%;
+	height: auto;
 	color: white;
 	text-align: center;
 	display: flex;
@@ -682,15 +683,16 @@ a {
 	align-items: center;
 	margin-bottom: 15px;
 	font-weight: 600;
-	font-size: 2em;
+	font-size: 1.5em;
 	transition: .5s;
 	overflow: hidden;
+	background-color: #000;
 }
 
 .project:hover {
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	opacity: 0;
-	width: 99%;
+	background-color: #fff;
 }
 
 .project .content {
@@ -739,7 +741,7 @@ a {
 
 .project img {
 	width: 100%;
-	opacity: 0;
+	opacity: 0.6;
 	filter: blur(2px) grayscale(40%);
 	transition: 0.2s ease-in-out;
 	background-color: #3d5875;
@@ -859,7 +861,7 @@ a {
 	.wrapper-card, .wrapper-card-reversed {
 		height: auto;
 		width: 80vw;
-		margin-bottom: 1%;
+		margin-bottom: 2%;
 	}
 
 	.wrapper-card-down {
@@ -876,5 +878,23 @@ a {
 
 	.project {
 		font-size: 5em;
+	}
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: portrait) {
+	.presentation {
+		position: absolute;
+		top: 25%;
+		left: 50%;
+   		transform: translate(-50%, 0);
+	}
+	
+	.homePic {
+		position: absolute;
+		top: 10%;
+		left: 50%;
+   		transform: translate(-50%, 0);
+		width: 25vw;
 	}
 }

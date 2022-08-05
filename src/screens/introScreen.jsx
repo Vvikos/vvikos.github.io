@@ -18,14 +18,14 @@ export default function IntroScreen({mainRef}) {
 	return (
 		<div ref={mainRef} style={{ display: 'flex', flexDirection: 'row', height: '100vh', width: '100vw', justifyContent: 'center', alignItems: 'center', marginBottom: '20vh'}}>
 			<Parallax translateY={[-10, 20]} style={{height: '100%', width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}} >
-			<div className="about">
+			<div className='about'>
 				<Bounce left>
 					<img alt=' ' src={me}></img>
 				</Bounce>
-				<Bounce right>
+				<Bounce right cascade>
 					<div style={{width: '40%', marginLeft: "20px"}}>
-						<div className="intro">
-							<font color="#FF5E62">I am Victor Vogt</font>, I'm a junior fullstack and automation web engineer
+						<div className='intro'>
+							<font color='#FF5E62'>I am Victor Vogt</font>, I'm a junior fullstack and automation web engineer
 						</div>
 						<br />
 						<div style={{height: '10%',width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', flexWrap: 'wrap'}}>
@@ -33,7 +33,7 @@ export default function IntroScreen({mainRef}) {
 								<i className="fa-solid fa-location-dot fa-xl" style={{color: '#EA4335'}}></i>Strasbourg, France
 							</div>
 							<div className='info'>
-								<i className="fa-solid fa-graduation-cap fa-xl" style={{color: '#EA4335'}}></i>Computer Science PhD, University of Strasbourg
+								<i className='fa-solid fa-graduation-cap fa-xl' style={{color: '#EA4335'}}></i>Computer Science PhD, University of Strasbourg
 							</div>
 							<div className='info'>
 								<a href='https://github.com/Vvikos' target='_blank'  rel="noreferrer"><i className="fa-brands fa-github fa-xl" style={{color: '#EA4335'}}></i></a>Vvikos
