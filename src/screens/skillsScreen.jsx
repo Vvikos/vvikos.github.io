@@ -10,20 +10,17 @@ export default function SkillsScreen({mainRef}) {
 			<div className='skillsSection'>
 				<div className="wrapper-card wrapper-card-down">
 					<div className="card">
-						<div><i className="fa-solid fa-display fa-3x" style={{color: '#00FFB8'}} ></i></div>
-						<h2>Front End</h2>
-						<div className="description">User friendly web interfaces developpement.</div>
+						<div><i className="fa-solid fa-bolt fa-3x" style={{color: '#FDD023'}} ></i></div>
+						<h2>Automation</h2>
+						<div className="description">Automate manual or deployement processes from operating systems to tests.</div>
 						<div className="languages">
-							<div className="language">React.js</div>
-							<div className="language">React Native</div>
-							<div className="language">React XR</div>
-							<div className="language">Tree.js</div>
-							<div className="language">HTML5</div>
-							<div className="language">CSS</div>
-							<div className="language">SCSS</div>
-							<div className="language">NPM</div>
-							<div className="language">Javascript</div>
-							<div className="language">Expo</div>
+							<div className="language">Ansible</div>
+							<div className="language">Git CI/CD</div>
+							<div className="language">Docker</div>
+							<div className="language">UNIX/Linux</div>
+							<div className="language">Robot Framework</div>
+							<div className="language">Karate DSL</div>
+							<div className="language">Selenium</div>
 						</div>
 					</div>
 				</div>
@@ -45,17 +42,20 @@ export default function SkillsScreen({mainRef}) {
 				</div>
 				<div className="wrapper-card">
 					<div className="card">
-						<div><i className="fa-solid fa-bolt fa-3x" style={{color: '#FDD023'}} ></i></div>
-						<h2>Automation</h2>
-						<div className="description">Automate manual or deployement processes from operating systems to tests.</div>
+						<div><i className="fa-solid fa-display fa-3x" style={{color: '#00FFB8'}} ></i></div>
+						<h2>Front End</h2>
+						<div className="description">User friendly web interfaces developpement.</div>
 						<div className="languages">
-							<div className="language">Ansible</div>
-							<div className="language">Git CI/CD</div>
-							<div className="language">Docker</div>
-							<div className="language">UNIX/Linux</div>
-							<div className="language">Robot Framework</div>
-							<div className="language">Karate DSL</div>
-							<div className="language">Selenium</div>
+							<div className="language">React.js</div>
+							<div className="language">React Native</div>
+							<div className="language">React XR</div>
+							<div className="language">Three.js</div>
+							<div className="language">HTML5</div>
+							<div className="language">CSS</div>
+							<div className="language">SCSS</div>
+							<div className="language">NPM</div>
+							<div className="language">Javascript</div>
+							<div className="language">Expo</div>
 						</div>
 					</div>
 				</div>

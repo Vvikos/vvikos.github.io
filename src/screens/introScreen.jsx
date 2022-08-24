@@ -36,7 +36,7 @@ export default function IntroScreen({mainRef}) {
 								<i className='fa-solid fa-graduation-cap fa-xl' style={{color: '#EA4335'}}></i>Computer Science PhD, University of Strasbourg
 							</div>
 							<div className='info'>
-								<a href='https://github.com/Vvikos' target='_blank'  rel="noreferrer"><i className="fa-brands fa-github fa-xl" style={{color: '#EA4335'}}></i></a>Vvikos
+								<a href='https://github.com/Vvikos' target='_blank'  rel="noreferrer"><i className="fa-brands fa-github fa-xl" style={{color: '#EA4335'}}></i>Vvikos</a>
 							</div>
 						</div>
 						<div className="bubble" >
@@ -44,7 +44,7 @@ export default function IntroScreen({mainRef}) {
 							After that, I chosed to learn computer science for my future career and because I always find it easy to use a computer.
 							<br /><br />
 							As of today, I’m 22 and I come from France. My studies confirmed my passions for automation and fullstack projects.
-							Furthermore, I have concrete passion for skateboarding, hiking, music, travelling and clothes.		
+							Furthermore, I have concrete passion for skateboarding, hiking, music, travelling and clothes.
 						</div>
 						<div style={{ height: 'auto', display: 'flex', flexDirection: 'row', width: "100%", justifyContent: 'flex-start', alignItems: 'center'}}>
 							<a onMouseDown={animateButton} className="bubbly-button" href="/cv.pdf" download="CV"><i className="fa-solid fa-download"></i>Download CV</a>

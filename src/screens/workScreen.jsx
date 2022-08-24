@@ -39,7 +39,7 @@ export default function WorkScreen({mainRef}) {
 							<div className='desc'>
 								{projects[i].desc}
 							</div>
-							<div style={{display: 'flex', width: '25%', justifyContent: 'space-between', position: 'absolute', bottom: '5%'}}>
+							<div style={{display: 'flex', width: '30%', justifyContent: 'space-between', position: 'absolute', bottom: '5%'}}>
 								<div className='duration'>
 									<i className="fa-solid fa-hourglass"></i>{projects[i].duration}
 								</div>
