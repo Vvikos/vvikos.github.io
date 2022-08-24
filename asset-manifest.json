@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bd2d1df1.css",
+    "main.js": "/static/js/main.9b3bb94e.js",
+    "static/media/PF.PNG": "/static/media/PF.18109557c52d570ef628.PNG",
+    "static/media/AOP.png": "/static/media/AOP.827109c4058037eb6d6b.png",
+    "static/media/QA.jpg": "/static/media/QA.671aa6f1d03e2654c6d7.jpg",
+    "static/media/me-lavander-1.JPG": "/static/media/me-lavander-1.227c1041a0b342db40a2.JPG",
+    "static/media/Thunder-BlackHC.ttf": "/static/media/Thunder-BlackHC.f5afc85daa90c6f7c7b0.ttf",
+    "static/media/VR.png": "/static/media/VR.94ec1b21cb56b532957e.png",
+    "static/media/MH.png": "/static/media/MH.1642a5ca7621db548dd8.png",
+    "static/media/Thunder-BlackHC.eot": "/static/media/Thunder-BlackHC.2dec25771c5228af10a9.eot",
+    "static/media/ERP.jpg": "/static/media/ERP.90ce10288b0ca8b9d580.jpg",
+    "static/media/Thunder-BlackHC.woff": "/static/media/Thunder-BlackHC.67871320b34c0523da60.woff",
+    "static/media/Thunder-BlackHC.woff2": "/static/media/Thunder-BlackHC.a51ea0bfacbad547083a.woff2",
+    "index.html": "/index.html",
+    "main.bd2d1df1.css.map": "/static/css/main.bd2d1df1.css.map",
+    "main.9b3bb94e.js.map": "/static/js/main.9b3bb94e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd2d1df1.css",
+    "static/js/main.9b3bb94e.js"
+  ]
+}
