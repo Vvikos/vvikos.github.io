@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.33d627fe.css",
-    "main.js": "/static/js/main.eadca57e.js",
+    "main.css": "/static/css/main.d148c8fc.css",
+    "main.js": "/static/js/main.0fae2aeb.js",
     "static/media/PF.PNG": "/static/media/PF.18109557c52d570ef628.PNG",
     "static/media/AOP.png": "/static/media/AOP.827109c4058037eb6d6b.png",
     "static/media/QA.jpg": "/static/media/QA.671aa6f1d03e2654c6d7.jpg",
     "static/media/me-lavander-1.JPG": "/static/media/me-lavander-1.227c1041a0b342db40a2.JPG",
-    "static/media/Thunder-BlackHC.ttf": "/static/media/Thunder-BlackHC.f5afc85daa90c6f7c7b0.ttf",
     "static/media/VR.png": "/static/media/VR.94ec1b21cb56b532957e.png",
     "static/media/MH.png": "/static/media/MH.1642a5ca7621db548dd8.png",
-    "static/media/Thunder-BlackHC.eot": "/static/media/Thunder-BlackHC.2dec25771c5228af10a9.eot",
     "static/media/ERP.jpg": "/static/media/ERP.90ce10288b0ca8b9d580.jpg",
-    "static/media/Thunder-BlackHC.woff": "/static/media/Thunder-BlackHC.67871320b34c0523da60.woff",
-    "static/media/Thunder-BlackHC.woff2": "/static/media/Thunder-BlackHC.a51ea0bfacbad547083a.woff2",
+    "static/media/Wedges.woff": "/static/media/Wedges.983fe0566a7d272e9285.woff",
+    "static/media/Wedges.woff2": "/static/media/Wedges.c6a4abd42f142a0b1db8.woff2",
     "index.html": "/index.html",
-    "main.33d627fe.css.map": "/static/css/main.33d627fe.css.map",
-    "main.eadca57e.js.map": "/static/js/main.eadca57e.js.map"
+    "main.d148c8fc.css.map": "/static/css/main.d148c8fc.css.map",
+    "main.0fae2aeb.js.map": "/static/js/main.0fae2aeb.js.map"
   },
   "entrypoints": [
-    "static/css/main.33d627fe.css",
-    "static/js/main.eadca57e.js"
+    "static/css/main.d148c8fc.css",
+    "static/js/main.0fae2aeb.js"
   ]
 }
