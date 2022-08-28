@@ -1,14 +1,12 @@
 @font-face {
-    font-family: 'ThunderBlack';
-    src: url('./assets/fonts/Thunder-BlackHC.eot'); /* IE9 Compat Modes */
-    src: url('./assets/fonts/Thunder-BlackHC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./assets/fonts/Thunder-BlackHC.woff') format('woff'), /* Modern Browsers */
-         url('./assets/fonts/Thunder-BlackHC.woff2') format('woff2'), /* Modern Browsers */
-         url('./assets/fonts/Thunder-BlackHC.ttf') format('truetype'); /* Safari, Android, iOS */
-    font-style: normal;
+    font-family: 'Wedges';
+    src: url('./assets/fonts/Wedges.woff2') format('woff2'),
+        url('./assets/fonts/Wedges.woff') format('woff');
     font-weight: normal;
-    text-rendering: optimizeLegibility;
+    font-style: normal;
+    font-display: swap;
 }
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 *::-webkit-scrollbar {
@@ -42,6 +40,7 @@ body {
 	font-size: 1vw;
 	overflow-x: hidden;
     width: 100vw;
+	margin: 0;
 }
 
 main {
@@ -93,16 +92,13 @@ a {
 
 /* NAVBAR */
 .navbarTitle {
-	font-size: 2.5em;
+	font-size: 1.8em;
 	letter-spacing: 0.1em;
-	font-family: 'ThunderBlack', Arial, sans-serif;
-	margin-top: auto;
-	margin-bottom: auto;
 	opacity: 0;
 }
 
 .navbarTitle span {
-	font-family: 'ThunderBlack', Arial, sans-serif;
+	font-family: 'Wedges';
 }
 
 .navbarTitle .displayAfter {
@@ -307,9 +303,9 @@ a {
 }
   
 .title {
-	font-size: 9.5em;
+	font-size: 5.5em;
 	letter-spacing: 0.1em;
-	font-family: 'ThunderBlack', Arial, sans-serif;
+	font-family: 'Wedges';
 	margin-top: 3%;
 }
 
@@ -687,6 +683,7 @@ a {
 	transition: .5s;
 	overflow: hidden;
 	background-color: #000;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 .project:hover {
@@ -815,17 +812,42 @@ a {
 	font-size: 0.8em;
 }
 
-/* SIGNATURE */
-.signature {
-	position: absolute;
-	right: 1%;
-	left: auto;
-	font-size: 1.5em;
-	font-family: 'Arizonia', cursive;
-	text-align: right;
-	background-color: white;
-	color: #FF5E62;
-	padding: 15px;
+/* BOTTOM STYLE */
+.waves {
+	margin-top: 30vh;
+	width: 100%;
+	height:10vh;
+	min-height:100px;
+	max-height:150px;
+}
+
+.waves > g > use {
+	animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)	infinite;
+}
+.waves > g > use:nth-child(1) {
+	animation-delay: -2s;
+	animation-duration: 21s;
+}
+.waves > g > use:nth-child(2) {
+	animation-delay: -3s;
+	animation-duration: 30s;
+}
+.waves > g > use:nth-child(3) {
+	animation-delay: -4s;
+	animation-duration: 39s;
+}
+.waves > g > use:nth-child(4) {
+	animation-delay: -5s;
+	animation-duration: 60s;
+}
+
+@keyframes move-forever {
+	0% {
+		transform: translate3d(-90px,0,0);
+	}
+	100% { 
+		transform: translate3d(85px,0,0);
+	}
 }
 
 
