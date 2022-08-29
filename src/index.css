@@ -605,15 +605,16 @@ a {
 }
 
 .card .language:before {
-	content:"";
+	content:" ";
 	top: 0px;
 	left: 0px;
-	position:absolute;
+	right: 0px;
+	bottom: 0px;
+	height: auto;
+	width: auto;
+	position: absolute;
 	background: linear-gradient(to right, #ff9966, #ff5e62);
 	background-size: cover;
-	background-position: 0% 0%;
-	height: 100%;
-	width: 100%;
 	z-index: -10;
 	animation: gradient 5s alternate infinite;
 	background-size: 200% 200%;
@@ -628,15 +629,13 @@ a {
 	bottom: 1px;
 	position:absolute;
 	background: white;
-	background-size: cover;
-	background-position: 0% 0%;
 	height: auto;
 	width: auto;
 	z-index: -2;
 	border-radius: 0.2%;
 	transition: transform 0.5s cubic-bezier(0,.35,.74,.06);
 	transform: scaleX(1);
-	transform-origin: bottom left;
+	transform-origin: center left;
 }
 
 .card .language:hover {
@@ -644,8 +643,8 @@ a {
 }
 
 .card .language:hover:after {
+	transform-origin: center right;
 	transform: scaleX(0);
-	transform-origin: top right;
 }
 
 /* PROJECTS */
