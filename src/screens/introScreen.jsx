@@ -23,12 +23,12 @@ export default function IntroScreen({mainRef}) {
 					<img alt=' ' src={me}></img>
 				</Bounce>
 				<Bounce right cascade>
-					<div style={{width: '40%', marginLeft: "20px"}}>
+					<div className='aboutInfoContainer'>
 						<div className='intro'>
 							<font color='#FF5E62'>I am Victor Vogt</font>, I'm a junior fullstack and automation web engineer
 						</div>
 						<br />
-						<div style={{height: '10%',width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', flexWrap: 'wrap'}}>
+						<div className='aboutTagsContainer'>
 							<div className='info'>
 								<i className="fa-solid fa-location-dot fa-xl" style={{color: '#EA4335'}}></i>Strasbourg, France
 							</div>
@@ -46,7 +46,7 @@ export default function IntroScreen({mainRef}) {
 							As of today, I’m 22 and I come from France. My studies confirmed my passions for automation and fullstack projects.
 							Furthermore, I have concrete passion for skateboarding, hiking, music, travelling and clothes.
 						</div>
-						<div style={{ height: 'auto', display: 'flex', flexDirection: 'row', width: "100%", justifyContent: 'flex-start', alignItems: 'center'}}>
+						<div className='aboutButtonsContainer'>
 							<a onMouseDown={animateButton} className="bubbly-button" href="/cv.pdf" download="CV"><i className="fa-solid fa-download"></i>Download CV</a>
 							<a onMouseDown={animateButton} className="bubbly-button" href="https://www.linkedin.com/in/victor-vogt-80b766209" target='_blank'  rel="noreferrer">Hire Me</a>
 						</div>
