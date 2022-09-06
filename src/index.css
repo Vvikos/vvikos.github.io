@@ -250,10 +250,10 @@ a {
 	top: 0;
 	left: 0;
 	display: block;
-	border-radius: 28px;
+	border-radius: 50px;
 	background: rgba(255, 171, 157, 0.5);
-	width: 56px;
-	height: 56px;
+	width: 25%;
+	height: 100%;
 	transition: all .3s ease; 
 }
 
