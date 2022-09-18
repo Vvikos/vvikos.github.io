@@ -30,13 +30,10 @@ export default function SkillsScreen({mainRef}) {
 						<h2>Back End</h2>
 						<div className="description">Large to small backend applications developpement and conception.</div>
 						<div className="languages">
-							<div className="language">Java</div>
-							<div className="language">Python</div>
-							<div className="language">Node.js</div>
+							<div className="language">J2EE</div>
 							<div className="language">Rest API</div>
 							<div className="language">GraphQL</div>
-							<div className="language">NoSQL</div>
-							<div className="language">SQL</div>
+							<div className="language">NoSQL/SQL</div>
 						</div>
 					</div>
 				</div>
@@ -49,26 +46,9 @@ export default function SkillsScreen({mainRef}) {
 							<div className="language">React.js</div>
 							<div className="language">React Native</div>
 							<div className="language">React XR</div>
-							<div className="language">Three.js</div>
-							<div className="language">HTML5</div>
-							<div className="language">CSS</div>
+							<div className="language">HTML5/CSS/Javascript</div>
 							<div className="language">SCSS</div>
-							<div className="language">NPM</div>
-							<div className="language">Javascript</div>
 							<div className="language">Expo</div>
-						</div>
-					</div>
-				</div>
-				<div className="wrapper-card-reversed wrapper-card-down">
-					<div className="card">
-						<div><i className="fa-solid fa-people-group fa-3x" style={{color: '#9d5aad'}} ></i></div>
-						<h2>Engineering</h2>
-						<div className="description">Work with a team to enhance project quality and work efficiency.</div>
-						<div className="languages">
-							<div className="language">Jira</div>
-							<div className="language">Agile</div>
-							<div className="language">SCRUM</div>
-							<div className="language">English</div>
 						</div>
 					</div>
 				</div>

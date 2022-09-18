@@ -33,7 +33,7 @@ export default function IntroScreen({mainRef}) {
 								<i className="fa-solid fa-location-dot fa-xl" style={{color: '#EA4335'}}></i>Strasbourg, France
 							</div>
 							<div className='info'>
-								<i className='fa-solid fa-graduation-cap fa-xl' style={{color: '#EA4335'}}></i>Computer Science PhD, University of Strasbourg
+								<i className='fa-solid fa-graduation-cap fa-xl' style={{color: '#EA4335'}}></i>Computer Science Master, University of Strasbourg
 							</div>
 							<div className='info'>
 								<a href='https://github.com/Vvikos' target='_blank'  rel="noreferrer"><i className="fa-brands fa-github fa-xl" style={{color: '#EA4335'}}></i>Vvikos</a>
@@ -47,7 +47,7 @@ export default function IntroScreen({mainRef}) {
 							Furthermore, I have concrete passion for skateboarding, hiking, music, travelling and clothes.
 						</div>
 						<div className='aboutButtonsContainer'>
-							<a onMouseDown={animateButton} className="bubbly-button" href="/cv.pdf" download="CV"><i className="fa-solid fa-download"></i>Download CV</a>
+							<a onMouseDown={animateButton} className="bubbly-button" href="/CV.pdf" download="CV"><i className="fa-solid fa-download"></i>Download CV</a>
 							<a onMouseDown={animateButton} className="bubbly-button" href="https://www.linkedin.com/in/victor-vogt-80b766209" target='_blank'  rel="noreferrer">Hire Me</a>
 						</div>
 					</div>
